@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Alex Radikov, Mcmaster, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.12.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\amrad\OneDrive\Documents\Second Year\2DX4\Studios\2dx4_ds90-1\2dx4_ds90-1.uvprojx
+Project File Date:  04/07/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_msp432e401y_uvision.s...
+compiling SysTick.c...
+compiling PLL.c...
+compiling VL53L1X_api.c...
+uart.h(10): warning:  #1-D: last line of file ends without a newline
+  	void Status_Check(char* array, int status);
+VL53L1X_api.c(272): warning:  #177-D: variable "tmp"  was declared but never referenced
+  	uint8_t tmp;
+VL53L1X_api.c: 2 warnings, 0 errors
+compiling uart.c...
+uart.h(10): warning:  #1-D: last line of file ends without a newline
+  	void Status_Check(char* array, int status);
+uart.c(64): warning:  #1-D: last line of file ends without a newline
+  	}
+uart.c: 2 warnings, 0 errors
+compiling onboardLEDs.c...
+compiling 2dx4_ds90-1.c...
+uart.h(10): warning:  #1-D: last line of file ends without a newline
+  	void Status_Check(char* array, int status);
+2dx4_ds90-1.c(100): warning:  #177-D: variable "ToFSensor"  was declared but never referenced
+    uint8_t ToFSensor = 1; // 0=Left, 1=Center(default), 2=Right
+2dx4_ds90-1.c(102): warning:  #177-D: variable "SignalRate"  was declared but never referenced
+    uint16_t SignalRate;
+2dx4_ds90-1.c(103): warning:  #177-D: variable "AmbientRate"  was declared but never referenced
+    uint16_t AmbientRate;
+2dx4_ds90-1.c(104): warning:  #177-D: variable "SpadNum"  was declared but never referenced
+    uint16_t SpadNum; 
+2dx4_ds90-1.c(107): warning:  #177-D: variable "angle"  was declared but never referenced
+  	uint32_t angle=64;
+compiling vl53l1_platform_2dx4.c...
+vl53l1_platform_2dx4.c(324): warning:  #167-D: argument of type "uint32_t *" is incompatible with parameter of type "uint8_t *"
+  	writeI2C(&data, 4);	
+vl53l1_platform_2dx4.c(402): warning:  #223-D: function "SysTick_Wait" declared implicitly
+      SysTick_Wait(120000);  // wait 10ms (assumes 120 MHz clock)
+vl53l1_platform_2dx4.c: 2 warnings, 0 errors
+compiling system_msp432e401y.c...
+linking...
+Program Size: Code=4846 RO-data=698 RW-data=20 ZI-data=2860  
+".\Objects\Lab7_ToF.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: TexasInstruments
+                http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/msp432cmsis/latest/exports/TexasInstruments.MSP432E4_DFP.3.2.6.pack
+                TexasInstruments.MSP432E4_DFP.3.2.6
+                Device Family Pack for Texas Instruments SimpleLink(TM) MSP432E4 Series
+   * Component: Startup Version: 3.2.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\amrad\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\amrad\AppData\Local\Arm\Packs\TexasInstruments\MSP432E4_DFP\3.2.6\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: TexasInstruments::Device:Startup:3.2.3
+      Source file:   Examples\EmptyMain\main.c
+      Source file:   Device\Source\system_msp432e401y.c
+      Source file:   Examples\BlinkLED\blinkLED.c
+      Source file:   Device\Source\startup_msp432e401y_uvision.s
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

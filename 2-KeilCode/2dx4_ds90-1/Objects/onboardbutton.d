@@ -1,0 +1,12 @@
+.\objects\onboardbutton.o: OnboardButton.c
+.\objects\onboardbutton.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\onboardbutton.o: tm4c1294ncpdt.h
+.\objects\onboardbutton.o: vl53l1x_api.h
+.\objects\onboardbutton.o: vl53l1_platform.h
+.\objects\onboardbutton.o: vl53l1_types.h
+.\objects\onboardbutton.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\onboardbutton.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\onboardbutton.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\onboardbutton.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\onboardbutton.o: onboardLEDs.h
+.\objects\onboardbutton.o: uart.h
